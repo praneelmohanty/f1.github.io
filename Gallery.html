@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Photo Gallery</title>
+    <link rel="icon" type="image/png" href="Photos/F1.png">
+    <link rel="stylesheet" href="CSS/Gallery.css">
+    <link rel="stylesheet" href="lightbox2-dev/dist/css/lightbox.css">
+    <script src="JavaScript/Gallery.js"></script>
+    <script src="lightbox2-dev/dist/js/lightbox-plus-jquery.js"></script>
+</head>
+<body style="background-image: url(Photos/F1\ background.png); 
+background-repeat: no-repeat;
+background-size: cover;" onload="setImages()">
+    <div id="message">
+        <p>
+            Hover over this image
+        </p>
+    </div>
+    <div id="gallery">
+        <a href="Photos/lando.jpeg" data-lightbox="Photos" data-title="Lando Norris" class="img-link">
+            <img src="Photos/lando.jpeg" alt="Lando <br> Norris" class="img" 
+            onmouseover="upDate(this)"
+            onfocus="upDate(this)"
+            onmouseleave="unDo()">
+        </a>
+        <a href="Photos/carlos .webp" data-lightbox="Photos" data-title="Carlos Sainz" class="img-link">
+            <img src="Photos/carlos .webp" alt="Carlos <br> Sainz" class="img"
+            onmouseover="upDate(this)"
+            onfocus="upDate(this)"
+            onmouseleave="unDo()">
+        </a>
+        <a href="Photos/charles.jpeg" data-lightbox="Photos" data-title="Charles Leclerc" class="img-link"> 
+            <img src="Photos/charles.jpeg" alt="Charles <br> Leclerc" class="img"
+            onmouseover="upDate(this)"
+            onfocus="upDate(this)"
+            onmouseleave="unDo()">
+        </a>
+        <a href="Photos/lewis.webp" data-lightbox="Photos" data-title="Lewis Hamilton" class="img-link">
+            <img src="Photos/lewis.webp" alt="Lewis <br> Hamilton" class="img"
+            onmouseover="upDate(this)"
+            onfocus="upDate(this)"
+            onmouseleave="unDo()">
+        </a>
+        <a href="Photos/fernando.avif" data-lightbox="Photos" data-title="Fernando Alonso" class="img-link">
+            <img src="Photos/fernando.avif" alt="Fernando Alonso" class="img"
+            onmouseover="upDate(this)"
+            onfocus="upDate(this)"
+            onmouseleave="unDo()">
+        </a>
+        <a href="Photos/verstappen.webp" data-lightbox="Photos" data-title="Max Verstappen" class="img-link">
+            <img src="Photos/verstappen.webp" alt="Max <br> Verstappen" class="img"
+            onmouseover="upDate(this)"
+            onfocus="upDate(this)"
+            onmouseleave="unDo()">
+        </a>
+    </div>
+</body>
+</html>
